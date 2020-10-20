@@ -19,25 +19,25 @@ public class TC10 extends Base  {
 	
 		
 	@Test
-	public void LoginPlayVideoSubscribe() throws InterruptedException
+	public void LoginSearchPlay() throws InterruptedException
 	{		
-			WebElement signin =driver.findElement(By.xpath("//yt-formatted-string[text() ='Sign in']"));
-			signin.click();			
-			Thread.sleep(2000);		
-			WebElement username = driver.findElement(By.xpath("//input[@autocomplete='username']"));		
-			Thread.sleep(2000);		
-			username.sendKeys("deepautomationtesting@gmail.com");		
-			WebElement nxtbtn = driver.findElement(By.xpath("//div[@class='VfPpkd-RLmnJb']"));
-			nxtbtn.click();		
-			Thread.sleep(5000);		
-			WebElement passwd = driver.findElement(By.xpath("//input[@type='password']"));
-			passwd.sendKeys("Deep@123");		
-			WebElement nextbn1 = driver.findElement(By.xpath("//div[@class='VfPpkd-RLmnJb'][1]"));
-			nextbn1.click();
-			Thread.sleep(5000);					
+		WebElement signin =driver.findElement(By.xpath(Pr.getProperty("signin")));
+		signin.click();			
+		Thread.sleep(2000);		
+		WebElement username = driver.findElement(By.xpath(Pr.getProperty("username")));		
+		Thread.sleep(2000);		
+		username.sendKeys(Pr.getProperty("id"));		
+		WebElement nxtbtn = driver.findElement(By.xpath(Pr.getProperty("nxtbtn")));
+		nxtbtn.click();		
+		Thread.sleep(5000);		
+		WebElement passwd = driver.findElement(By.xpath(Pr.getProperty("passwd")));
+		passwd.sendKeys("Deep@123");		
+		WebElement nextbn1 = driver.findElement(By.xpath(Pr.getProperty("nextbn1")));
+		nextbn1.click();
+		Thread.sleep(5000);				
 			
 			Actions act = new Actions(driver);
-			WebElement searchbox = driver.findElement(By.xpath("//input[@id='search']"));
+			WebElement searchbox = driver.findElement(By.xpath(Pr.getProperty("searchbox")));
 			searchbox.click();
 			searchbox.sendKeys("a");
 			
@@ -47,22 +47,22 @@ public class TC10 extends Base  {
 			js.executeScript("scroll(0, 250)");
 			
 			Thread.sleep(2000);
-			WebElement wb = driver.findElement(By.xpath("//div[@id='sbse5']//b"));
+			WebElement wb = driver.findElement(By.xpath(Pr.getProperty("enteredtext")));
 			act.moveToElement(wb).click().perform();
 			
 			//WebElement searchIcon =	driver.findElement(By.xpath("//button[@id='search-icon-legacy']"));
 			Thread.sleep(2000);
-			WebElement firstVideo = driver.findElement(By.xpath("//yt-formatted-string[@class='style-scope ytd-video-renderer'][1]"));
+			WebElement firstVideo = driver.findElement(By.xpath(Pr.getProperty("fvideo")));
 			firstVideo.click();
 						    
 			
 			Thread.sleep(2000);
-		    WebElement profile = driver.findElement(By.xpath("//img[@alt='Avatar image']"));
+		    WebElement profile = driver.findElement(By.xpath(Pr.getProperty("profile")));
 		    profile.click();
 		    
 		    Thread.sleep(5000);
 		    
-		    WebElement signoutbtn = driver.findElement(By.xpath("//yt-formatted-string[text() ='Sign out']"));
+		    WebElement signoutbtn = driver.findElement(By.xpath(Pr.getProperty("signoutbtn")));
 		    
 		    signoutbtn.click();
 	}	

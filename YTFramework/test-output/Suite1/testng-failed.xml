@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <test name="Command line test b36a7d54-b54f-4c97-9e3b-3e2ae4f116ba(failed)">
+    <classes>
+      <class name="org.testing.TestScripts.TC3">
+        <methods>
+          <include name="aftrTest"/>
+          <include name="LoginSubscribe"/>
+          <include name="befrTest"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC3 -->
+      <class name="org.testing.TestScripts.TC1">
+        <methods>
+          <include name="aftrTest"/>
+          <include name="befrTest"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC1 -->
+      <class name="org.testing.TestScripts.TC8">
+        <methods>
+          <include name="aftrTest"/>
+          <include name="befrTest"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC8 -->
+      <class name="org.testing.TestScripts.TC4">
+        <methods>
+          <include name="LoginLibrary"/>
+          <include name="aftrTest"/>
+          <include name="befrTest"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC4 -->
+      <class name="org.testing.TestScripts.TC7">
+        <methods>
+          <include name="aftrTest"/>
+          <include name="LoginPlayVideoLike"/>
+          <include name="befrTest"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC7 -->
+      <class name="org.testing.TestScripts.TC10">
+        <methods>
+          <include name="aftrTest"/>
+          <include name="befrTest"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC10 -->
+      <class name="org.testing.TestScripts.TC5">
+        <methods>
+          <include name="aftrTest"/>
+          <include name="befrTest"/>
+          <include name="LoginWatchlater"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC5 -->
+      <class name="org.testing.TestScripts.TC2">
+        <methods>
+          <include name="aftrTest"/>
+          <include name="befrTest"/>
+          <include name="LoginHistory"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC2 -->
+    </classes>
+  </test> <!-- Command line test b36a7d54-b54f-4c97-9e3b-3e2ae4f116ba(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -8,6 +8,10 @@
      <class name="org.testing.TestScripts.TC3"/>
      <class name="org.testing.TestScripts.TC4"/>
      <class name="org.testing.TestScripts.TC5"/>
+     <class name="org.testing.TestScripts.TC7"/>
+     <class name="org.testing.TestScripts.TC8"/>
+     <class name="org.testing.TestScripts.TC9"/>
+             
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

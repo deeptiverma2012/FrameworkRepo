@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="org.testing.TestScripts.TC1">
+      <class name="org.testing.TestScripts.TC2">
         <methods>
-          <include name="youtubeLogin"/>
+          <include name="aftrTest"/>
           <include name="befrTest"/>
+          <include name="LoginHistory"/>
         </methods>
-      </class> <!-- org.testing.TestScripts.TC1 -->
+      </class> <!-- org.testing.TestScripts.TC2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,6 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testing.Base.Base;
+import org.testing.Pages.Login;
+import org.testing.Pages.Logout;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -18,37 +20,18 @@ public class TC5 extends Base {
 	@Test
 	public void LoginWatchlater() throws InterruptedException
 	{		
-		WebElement signin =driver.findElement(By.xpath("//yt-formatted-string[text() ='Sign in']"));
-		signin.click();			
-		Thread.sleep(2000);	
 		
-		WebElement username = driver.findElement(By.xpath("//input[@autocomplete='username']"));		
-		Thread.sleep(2000);	
+		Login log = new Login(driver, Pr);
+		log.sigin("deepautomationtesting@gmail.com", "Deep@123");			
 		
-		username.sendKeys("deepautomationtesting@gmail.com");		
-		WebElement nxtbtn = driver.findElement(By.xpath("//div[@class='VfPpkd-RLmnJb']"));
-		nxtbtn.click();
-		
-		Thread.sleep(5000);		
-		WebElement passwd = driver.findElement(By.xpath("//input[@type='password']"));
-		passwd.sendKeys("Deep@123");	
-		
-		WebElement nextbn1 = driver.findElement(By.xpath("//div[@class='VfPpkd-RLmnJb'][1]"));
-		nextbn1.click();
-		Thread.sleep(5000);		
-		
-	    WebElement WatchLater = driver.findElement(By.xpath("//yt-formatted-string[text() ='Watch later']"));
+	    WebElement WatchLater = driver.findElement(By.xpath(Pr.getProperty("watchlater")));
 	    WatchLater.click();
 	    Thread.sleep(3000);
 	    
-	    WebElement profile = driver.findElement(By.xpath("//img[@alt='Avatar image']"));
-	    profile.click();
+	    Logout lgout = new Logout(driver, Pr);
 	    
-	    Thread.sleep(5000);
-	    
-	    WebElement signoutbtn = driver.findElement(By.xpath("//yt-formatted-string[text() ='Sign out']"));
-	    
-	    signoutbtn.click();
+	    lgout.logout();
+		    
 	    
 	    
 		

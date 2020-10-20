@@ -1,87 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4606" started-at="2020-09-12T19:06:23Z" finished-at="2020-09-12T19:06:27Z">
+  <suite name="Suite1" duration-ms="330832" started-at="2020-10-15T17:58:04Z" finished-at="2020-10-15T18:03:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4606" started-at="2020-09-12T19:06:23Z" finished-at="2020-09-12T19:06:27Z">
-      <class name="org.testing.TestScripts.TC1">
-        <test-method status="FAIL" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC1@343f4d3d]" name="befrTest" is-config="true" duration-ms="0" started-at="2020-09-13T00:36:23Z" finished-at="2020-09-13T00:36:23Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=85.0.4183.102)
-  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 83 milliseconds
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
-System info: host: 'LAPTOP-N84L60DU', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58827}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}), userDataDir=C:\Users\Ashish\AppData\Local\Temp\scoped_dir7320_122372037}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=85.0.4183.102, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 49d487a223eda9949ef54f2c9f983cb4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=85.0.4183.102)
-  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 83 milliseconds
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
-System info: host: 'LAPTOP-N84L60DU', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58827}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}), userDataDir=C:\Users\Ashish\AppData\Local\Temp\scoped_dir7320_122372037}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=85.0.4183.102, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 49d487a223eda9949ef54f2c9f983cb4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
-	at org.testing.Base.Base.befrTest(Base.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+    <test name="Command line test 02a194f7-5be8-421a-8150-9fbe882e5d8c" duration-ms="330832" started-at="2020-10-15T17:58:04Z" finished-at="2020-10-15T18:03:35Z">
+      <class name="org.testing.TestScripts.TC8">
+        <test-method status="PASS" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC8@6be46e8f]" name="befrTest" is-config="true" duration-ms="10200" started-at="2020-10-15T23:31:58Z" finished-at="2020-10-15T23:32:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befrTest -->
-        <test-method status="SKIP" signature="youtubeLogin()[pri:0, instance:org.testing.TestScripts.TC1@343f4d3d]" name="youtubeLogin" duration-ms="2" started-at="2020-09-13T00:36:27Z" finished-at="2020-09-13T00:36:27Z">
+        <test-method status="PASS" signature="LoginPlayVideoSubscribe()[pri:0, instance:org.testing.TestScripts.TC8@6be46e8f]" name="LoginPlayVideoSubscribe" duration-ms="42394" started-at="2020-10-15T23:32:08Z" finished-at="2020-10-15T23:32:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPlayVideoSubscribe -->
+        <test-method status="PASS" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC8@6be46e8f]" name="aftrTest" is-config="true" duration-ms="93" started-at="2020-10-15T23:32:50Z" finished-at="2020-10-15T23:32:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftrTest -->
+      </class> <!-- org.testing.TestScripts.TC8 -->
+      <class name="org.testing.TestScripts.TC7">
+        <test-method status="PASS" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC7@68837a77]" name="befrTest" is-config="true" duration-ms="9111" started-at="2020-10-15T23:31:15Z" finished-at="2020-10-15T23:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befrTest -->
+        <test-method status="PASS" signature="LoginPlayVideoLike()[pri:0, instance:org.testing.TestScripts.TC7@68837a77]" name="LoginPlayVideoLike" duration-ms="33642" started-at="2020-10-15T23:31:24Z" finished-at="2020-10-15T23:31:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPlayVideoLike -->
+        <test-method status="PASS" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC7@68837a77]" name="aftrTest" is-config="true" duration-ms="66" started-at="2020-10-15T23:31:58Z" finished-at="2020-10-15T23:31:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftrTest -->
+      </class> <!-- org.testing.TestScripts.TC7 -->
+      <class name="org.testing.TestScripts.TC4">
+        <test-method status="PASS" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC4@77b52d12]" name="befrTest" is-config="true" duration-ms="9480" started-at="2020-10-15T23:30:00Z" finished-at="2020-10-15T23:30:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befrTest -->
+        <test-method status="PASS" signature="LoginLibrary()[pri:0, instance:org.testing.TestScripts.TC4@77b52d12]" name="LoginLibrary" duration-ms="27526" started-at="2020-10-15T23:30:10Z" finished-at="2020-10-15T23:30:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginLibrary -->
+        <test-method status="PASS" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC4@77b52d12]" name="aftrTest" is-config="true" duration-ms="122" started-at="2020-10-15T23:30:37Z" finished-at="2020-10-15T23:30:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftrTest -->
+      </class> <!-- org.testing.TestScripts.TC4 -->
+      <class name="org.testing.TestScripts.TC3">
+        <test-method status="PASS" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC3@614c5515]" name="befrTest" is-config="true" duration-ms="9154" started-at="2020-10-15T23:29:24Z" finished-at="2020-10-15T23:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befrTest -->
+        <test-method status="PASS" signature="LoginSubscribe()[pri:0, instance:org.testing.TestScripts.TC3@614c5515]" name="LoginSubscribe" duration-ms="27281" started-at="2020-10-15T23:29:33Z" finished-at="2020-10-15T23:30:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSubscribe -->
+        <test-method status="PASS" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC3@614c5515]" name="aftrTest" is-config="true" duration-ms="59" started-at="2020-10-15T23:30:00Z" finished-at="2020-10-15T23:30:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftrTest -->
+      </class> <!-- org.testing.TestScripts.TC3 -->
+      <class name="org.testing.TestScripts.TC5">
+        <test-method status="PASS" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC5@2d554825]" name="befrTest" is-config="true" duration-ms="10589" started-at="2020-10-15T23:30:37Z" finished-at="2020-10-15T23:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befrTest -->
+        <test-method status="PASS" signature="LoginWatchlater()[pri:0, instance:org.testing.TestScripts.TC5@2d554825]" name="LoginWatchlater" duration-ms="26903" started-at="2020-10-15T23:30:48Z" finished-at="2020-10-15T23:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWatchlater -->
+        <test-method status="PASS" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC5@2d554825]" name="aftrTest" is-config="true" duration-ms="89" started-at="2020-10-15T23:31:15Z" finished-at="2020-10-15T23:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftrTest -->
+      </class> <!-- org.testing.TestScripts.TC5 -->
+      <class name="org.testing.TestScripts.TC10">
+        <test-method status="PASS" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC10@4157f54e]" name="befrTest" is-config="true" duration-ms="10345" started-at="2020-10-15T23:32:51Z" finished-at="2020-10-15T23:33:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befrTest -->
+        <test-method status="PASS" signature="LoginSearchPlay()[pri:0, instance:org.testing.TestScripts.TC10@4157f54e]" name="LoginSearchPlay" duration-ms="33647" started-at="2020-10-15T23:33:01Z" finished-at="2020-10-15T23:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSearchPlay -->
+        <test-method status="PASS" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC10@4157f54e]" name="aftrTest" is-config="true" duration-ms="92" started-at="2020-10-15T23:33:34Z" finished-at="2020-10-15T23:33:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftrTest -->
+      </class> <!-- org.testing.TestScripts.TC10 -->
+      <class name="org.testing.TestScripts.TC2">
+        <test-method status="PASS" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC2@6fb554cc]" name="befrTest" is-config="true" duration-ms="10026" started-at="2020-10-15T23:28:42Z" finished-at="2020-10-15T23:28:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befrTest -->
+        <test-method status="PASS" signature="LoginHistory()[pri:0, instance:org.testing.TestScripts.TC2@6fb554cc]" name="LoginHistory" duration-ms="31600" started-at="2020-10-15T23:28:52Z" finished-at="2020-10-15T23:29:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginHistory -->
+        <test-method status="PASS" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC2@6fb554cc]" name="aftrTest" is-config="true" duration-ms="103" started-at="2020-10-15T23:29:24Z" finished-at="2020-10-15T23:29:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftrTest -->
+      </class> <!-- org.testing.TestScripts.TC2 -->
+      <class name="org.testing.TestScripts.TC1">
+        <test-method status="PASS" signature="befrTest()[pri:0, instance:org.testing.TestScripts.TC1@783e6358]" name="befrTest" is-config="true" duration-ms="10696" started-at="2020-10-15T23:28:04Z" finished-at="2020-10-15T23:28:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befrTest -->
+        <test-method status="PASS" signature="youtubeLogin()[pri:0, instance:org.testing.TestScripts.TC1@783e6358]" name="youtubeLogin" duration-ms="27468" started-at="2020-10-15T23:28:14Z" finished-at="2020-10-15T23:28:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- youtubeLogin -->
-        <test-method status="SKIP" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC1@343f4d3d]" name="aftrTest" is-config="true" duration-ms="0" started-at="2020-09-13T00:36:27Z" finished-at="2020-09-13T00:36:27Z">
+        <test-method status="PASS" signature="aftrTest()[pri:0, instance:org.testing.TestScripts.TC1@783e6358]" name="aftrTest" is-config="true" duration-ms="115" started-at="2020-10-15T23:28:42Z" finished-at="2020-10-15T23:28:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftrTest -->
       </class> <!-- org.testing.TestScripts.TC1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Command line test 02a194f7-5be8-421a-8150-9fbe882e5d8c -->
+  </suite> <!-- Suite1 -->
 </testng-results>
